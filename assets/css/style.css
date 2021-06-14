@@ -1,0 +1,330 @@
+* {
+    padding: 5px;
+}
+
+body {
+    background-color: #ededf6;
+    max-width: 1400px;
+    margin: 0px auto;
+    border: 1px solid rgba(192, 192, 192, 0.5);
+}
+
+ul li {
+    text-decoration-style: square;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #141c27;
+}
+
+p {
+    font-family: Lato;
+    line-height: 1.4;
+    font-size: 18px;
+    padding: 10px;
+    color: #141c27;
+}
+
+a {
+    font-family: Lato;
+    font-size: 18px;
+}
+
+img {
+    width: 30%;
+    float: right;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+em {
+    font-weight: 900;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 220%;
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+    display: inline;
+    color: #3e4a56;
+    background-color: #92cccd;
+    float: left;
+}
+
+h2 {
+    text-align: right;
+    font-family: Poppins;
+    font-size: 175%;
+    padding: 15px;
+    font-weight: 600;
+    color: #596b86;
+}
+
+/* The background-colors set for h3 and h4 allow for the project's titles to be more visible against their background image */
+h3 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 125%;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgba(238, 238, 246, 0.7);
+}
+
+h4 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 110%;
+    padding: 5px;
+    font-weight: 300;
+    background-color: rgba(238, 238, 246, 0.7);
+}
+
+main {
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+div {
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+.accessLinks {
+    display: none;
+} 
+
+/* Under a certain size of viewport, the nav elements stack vertically (instead of their default left-to-right) */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 150%;
+    color: #92cccd;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid #92cccd;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #31343d;
+}
+
+.banner-image {
+    background-image: url("../images/banner-industry-tech.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.subtitle {
+    border: solid 5px #92cccd;
+    background-color: #ededf6;
+    width: 60%;
+    float: right;
+    position: relative;
+}
+
+.top-row-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-columns {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    
+}
+
+.about-me-parent {
+    display: flex;
+}
+
+.about-me-title {
+    border-right: 2px solid #596b86;
+    padding: 20px;
+}
+
+.about-me-content {
+    text-indent: 20px;
+}
+
+.work-portfolio-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-portfolio-title {
+    border-right: 2px solid #596b86;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+/* Allows for the projects to be oriented with even spacing */
+
+.work-portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+#project {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    border: solid 5px #92cccd;
+    min-height: 250px;
+    min-width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ffffff80;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project:hover {
+    opacity: 50%;
+}
+
+.project-1 {
+    background-image: url("../images/birdwatcherquack.jpg");
+}
+
+.project-2 {
+    background-image: url("../images/SQLEmployeeTrack.jpg");  
+}
+
+.project-3 {
+    background-image: url("../images/instrument_search.png");
+    /* object-fit: contain; */
+}
+
+.project-4 {
+    background-image: url("../images/ScreenshotWeather.jpg");
+    object-fit: contain;  
+}
+
+.project-5 {
+    background-image: url("../images/screenshotPassword.jpg");
+    object-fit: contain;  
+}
+
+.project-6 {
+    background-image: url("../images/teambuildernode.jpg");
+    object-fit: contain; 
+}
+
+.contact-me-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px;
+}
+
+.contact-me-title {
+    border-right: 2px solid #596b86;
+    padding: 20px;
+}
+
+.contact-container {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-indent: 0%;
+}
+
+#contact-div {
+    padding: 0px;
+    margin: 0px;
+    text-indent: 0%;
+    font-size: 60%;
+}
+
+/* Normally, the title <div>s and their related content are arranged as rows. Once the viewport becomes less than 992 pixels in width, the elements stack vertically. There are also some changes related to the borders of h2 elements */
+
+@media screen and (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .about-me-parent {
+        text-wrap: wrap;
+        flex-direction: column;
+    }   
+
+    .about-me-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .work-portfolio-parent {
+        flex-direction: column;
+    }
+
+    .work-portfolio-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .contact-me-parent {
+        text-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-me-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+/* Once the viewport reaches under 768 pixels, the nav-elements stack upon each other vertically. */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-me-parent {
+        margin-bottom: 200px;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Daniel Pisani</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,300;0,600;1,400&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--This is an accessibility link for screen readers (,etc. to skip to the main content)-->
+    <h2 class="accessLinks">Accessibility links</h2>
+    <a href="#about-me-parent" class="accessLinks">Skip to content</a>
+    <!--The elements in the nav are subject to flex display-->
+    <header class="top-row-nav">
+        <div class="navbar">
+            <h1>Daniel Pisani</h1>
+            <nav>
+                <!--These anchors lead towards sections of this page (by id) -->
+                <a href="#about-me-parent">About Me</a>
+                <a href="#work-portfolio-parent">Work</a>
+                <a href="#contact-me-parent">Contact Me</a>
+                <a href="Daniel.PisaniCV.2021.3.pdf" download target="_blank">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-image" alt="banner of website; a dark blue background">
+        <div class="subtitle">
+            <h3>A Full-Stack Web Developer with a Healthy Blend of Medicine, Tech, and Politics</h3>
+        </div>
+    </div>
+
+    <!--All main parent containers have two sub-containers which are displayed as flex. They are stacked as columns when the viewport is under a certain width. -->
+
+    <main class="content-container">
+        <section class="about-me-parent" id="about-me-parent">
+            <div class="about-me-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-me-content">
+                <p>Greetings world! My name is <em>Daniel</em> (he/him). I'm a full-stack web developer, capable of being a wide variety of applications. I have an ongoing interest in the tech world. I like understanding how computers work, and I have big ideas about how technology can transform the medical and political world.</p> 
+                <p>In addition to that, I'm a practicing Registered Dietitian, bringing with me years of experience in clinical settings</p>
+                <img src="assets/images/Danielphoto.jpg" alt="photo of Daniel">
+                <p>A few words to describe myself. I consider myself:</p>
+                <ul>
+                    <li> ☑️ Lifelong Learner</li>
+                    <li>I've learned four languages on my own, on top of my native French and English.</li>
+                    <li> ☑️ Persistent and patient.</li>
+                    <li>I've written four books in four years and run half-marathons.</li>
+                    <li> ☑️ Creative and inventive.</li> 
+                    <li>I've played guitar for 15 years, and learned sales and marketing copywriting</li>
+                </ul>
+                <br>
+                <br>
+                <h2 style="text-align: left;">Coding Skills and Languages</h2>
+                <ul class="skill-columns">
+                    <li>- HTML</li>
+                    <li>- CSS</li>
+                    <li>- Vanilla Javascript</li>
+                    <li>- JQuery (though I hate it)</li>
+                    <li>- MySQL</li>
+                    <li>- ORM/Sequelize</li>
+                    <li>- Node.js/Express.js</li>
+                    <li>- HTML Routing</li>
+                    <li>- RESTful APIs</li>
+                    <li>- Handlebars</li>
+                </ul>
+                <br>
+                <p>Check out just a few of my projects below. Click the images to be taken either to its repo or deployed application</p>
+            </div>
+        </section>
+
+        <section class="work-portfolio-parent" id="work-portfolio-parent" >
+            <div class="work-portfolio-title">
+                <h2>Work</h2>
+            </div>
+            <div class="work-portfolio-content">
+
+                <!--The five projects. They are a set of anchors with divs placed inside. They are also subject to flex display. -->
+
+                <a href="https://wellandgood.github.io/BCS-Project-1/" alt="Image of musical instrument searcher application. Select to access directly."target="_blank" class="project-3" id="project">
+                    <div class="inner-text">
+                        <h3>Vuze Musical</h3>
+                        <h4>HTML/CSS/Javascript/APIs</h4>
+                    </div>
+                </a>
+
+                <a href="https://wellandgood.github.io/DanielsWeatherNetwork/" alt="Image of weather network application. Select to access directly."target="_blank"  class="project-4" id="project">
+                    <div class="inner-text">
+                        <h3>Weather Network</h3>
+                        <h4>HTML/CSS/Javascript/APIs</h4>
+                    </div>
+                </a>
+
+                <a href="https://wellandgood.github.io/JavascriptPasswordGenerator/" alt="Image of password generator application. Select to access directly." target="_blank"  class="project-5" id="project">
+                    <div class="inner-text">
+                        <h3>Password Generator</h3>
+                        <h4>HTML/CSS/Javascript</h4>
+                    </div>
+                </a>
+
+                <a href="http://birdwatcherquack.herokuapp.com/" alt="Image of birdwatcher application titled Quack. Select to access directly." target="_blank" class="project-1" id="project">
+                    <div class="inner-text">
+                        <h3>Birdwatcher App (Quack)</h3>
+                        <h4>Full-Stack</h4>
+                    </div>   
+                </a>
+
+                <a href="https://github.com/WellAndGood/EmployeeTrackerSQL" alt="Screenshot of back-end terminal containing chart of employees with job data." target="_blank" class="project-2" id="project">
+                    <div class="inner-text">
+                        <h3>Employee Tracker</h3>
+                        <h4>MySQL</h4>
+                    </div>
+                </a>
+
+                <a href="https://github.com/WellAndGood/EmployeeTrackerSQL" alt="Screenshot of browser with pre-built templates of employees." target="_blank" class="project-6" id="project">
+                    <div class="inner-text">
+                        <h3>Front-End Team-Builder</h3>
+                        <h4>Node.js</h4>
+                    </div>
+                </a>
+
+                
+            </div>
+        </section>
+
+        <!--The elements in the nav are subject to flex display-->
+        <section class="contact-me-parent" id ="contact-me-parent">
+            <div class="contact-me-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-me-content">
+                <nav class="contact-container">
+                    <h3><em>613-794-3977</em></h3>
+                    <a href="mailto:danielpisani12@hotmail.com" >danielpisani12@hotmail.com</a>
+                    <a href="https://github.com/wellandgood/" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/danielpisani/" target="_blank">LinkedIn</a>   
+                </nav>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
