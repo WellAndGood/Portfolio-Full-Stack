@@ -1,4 +1,4 @@
-# Personal Portfolio Project
+# Personal Portfolio
 
 The following is a mock webpage of my (WellAndGood's) personal portfolio.
 Last updated: June 14, 2021
